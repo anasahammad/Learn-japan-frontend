@@ -1,13 +1,18 @@
 
+import { Outlet } from 'react-router-dom'
 import './App.css'
+import Navbar from './components/shared/Navbar'
 
 
 function App() {
   
 
   return (
-    <div className='text-ellipsis'>
-      Hello Student
+    <div className=''>
+      <Navbar/>
+      
+
+      <Outlet/>
     </div>
   )
 }
